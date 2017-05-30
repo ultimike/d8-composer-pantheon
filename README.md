@@ -47,7 +47,7 @@ Remove "excludes" items from drupal-scaffold section of composer.json
  
 `terminus backup:create my_awesome_site.dev --element=database`
  
-`terminus backup:get my_awesome_site.dev --element=database | xargs curl -o mysite.sql.gz`
+`terminus backup:get my_awesome_site.dev --element=database | xargs curl -o db.sql.gz`
  
 Copy `/www/sites/example.settings.local.php` to `/www/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
@@ -65,4 +65,4 @@ $databases['default']['default'] = array (
 );
 ```
 
-Uncompress and import `mysite.sql.gz` into your local environment.
+Uncompress and import `db.sql.gz` into your local environment.
