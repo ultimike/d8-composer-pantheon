@@ -11,9 +11,9 @@
  
 `terminus connection:set my_awesome_site.dev git`
  
-`composer create-project pantheon-systems/example-drops-8-composer my-site`
+`composer create-project pantheon-systems/example-drops-8-composer my_awesome_site`
  
-`cd my-site`
+`cd my_awesome_site`
  
 `composer prepare-for-pantheon`
  
