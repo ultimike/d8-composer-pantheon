@@ -7,9 +7,9 @@
 
 ## Start from a local command-line in the directory where your project go (usually ~/sites/):
  
-`composer create-project pantheon-systems/example-drops-8-composer my-site`
+`composer create-project pantheon-systems/example-drops-8-composer my_awesome_site`
  
-`cd my-site`
+`cd my_awesome_site`
  
 `composer prepare-for-pantheon`
  
@@ -25,7 +25,7 @@ Remove "excludes" items from drupal-scaffold section of composer.json
  
 `git commit -m 'Initial commit.'`
  
-Copy `/www/sites/example.settings.local.php` to `/www/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
+Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
 ```$config_directories['sync'] = '../config';
 $settings['hash_salt'] = 'any_random_str';
