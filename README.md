@@ -49,7 +49,7 @@ Remove "excludes" items from drupal-scaffold section of composer.json
  
 `terminus backup:get my_awesome_site.dev --element=database | xargs curl -o db.sql.gz`
  
-Copy `/www/sites/example.settings.local.php` to `/www/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
+Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
 ```$config_directories['sync'] = '../config';
 $settings['hash_salt'] = 'any_random_str';
