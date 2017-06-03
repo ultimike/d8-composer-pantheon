@@ -5,7 +5,7 @@
   *  Terminus  
   *  Git  
 
-## Start from a local command-line in the directory where your project go (usually ~/sites/):
+## Start from a local command-line in the directory where your project will go (usually ~/sites/):
  
 `composer create-project pantheon-systems/example-drops-8-composer my_awesome_site`
  
