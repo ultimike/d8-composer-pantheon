@@ -5,7 +5,7 @@
   *  Terminus  
   *  Git  
 
-## Start from a local command-line in the directory where your project go (usually ~/sites/):
+## Start from a local command-line in the directory where your project will go (usually ~/sites/):
  
 `terminus site:create my_awesome_site "My Awesome Site" "Empty Upstream" --org='My Agency'`
  
