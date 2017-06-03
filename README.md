@@ -10,6 +10,10 @@
 `terminus site:create my_awesome_site "My Awesome Site" "Empty Upstream" --org='My Agency'`
  
 `terminus connection:set my_awesome_site.dev git`
+
+Optionally, enable Solr on the Pantheon site.
+
+`terminus solr:enable my_awesome_site`
  
 `composer create-project pantheon-systems/example-drops-8-composer my_awesome_site`
  
