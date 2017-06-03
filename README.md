@@ -11,9 +11,9 @@
  
 `terminus connection:set my_awesome_site.dev git`
 
-Optionally, enable Solr on the Pantheon site.
+Optionally, enable Solr on the Pantheon site: `terminus solr:enable my_awesome_site`
 
-`terminus solr:enable my_awesome_site`
+Optionally, use HTTP authentication to lock the Pantheondev site: `terminus lock:enable my_awesome_site.dev username password`
  
 `composer create-project pantheon-systems/example-drops-8-composer my_awesome_site`
  
