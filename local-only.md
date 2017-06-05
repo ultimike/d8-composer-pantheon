@@ -1,8 +1,7 @@
-# Quick Reference: Creating a new Pantheon-focused, Drupal 8 site with Composer and Terminus - LOCAL ENVIRONMENT ONLY
+# Quick Reference: Creating a new Pantheon-focused, Drupal 8 site with Composer - LOCAL ENVIRONMENT ONLY
 
 ## Prerequisites: 
   *  Composer  
-  *  Terminus  
   *  Git  
 
 ## Start from a local command-line in the directory where your project will go (usually ~/sites/):
