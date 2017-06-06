@@ -57,6 +57,8 @@ Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.loc
  
 ```$config_directories['sync'] = '../config';
 $settings['hash_salt'] = 'any_random_str';
+$settings[‘file_chmod_directory’] = 0777;
+$settings[‘file_chmod_file’] = 0666;
 $databases['default']['default'] = array (
   'database' => 'default',
   'username' => 'user',
