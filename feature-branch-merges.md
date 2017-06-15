@@ -15,6 +15,7 @@ Switch to master branch and pull in any changes.
 ```
 git checkout master
 git pull --rebase
+drush updatedb
 drush config-import
 ```
 
@@ -23,6 +24,7 @@ Go back to the sword branch and merge in changes (assume no code conflicts) from
 ```
 git checkout sword
 git merge master
+drush updatedb
 drush config-import
 ```
 ## Merging the feature branch into the "master" branch.
@@ -43,5 +45,6 @@ Get the master branch up-to-date and merge in changes from the sword branch and 
 git checkout master
 git pull --rebase
 git merge sword
+drush updatedb
 drush config-import
 ```
