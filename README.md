@@ -24,6 +24,8 @@ Optionally, use HTTP authentication to lock the Pantheondev site: `terminus lock
 `composer install`
  
 Remove "excludes" items from drupal-scaffold section of composer.json
+
+Optionally, remove the entire "workflows" section of pantheon.yml
  
 `composer drupal-scaffold`
  
