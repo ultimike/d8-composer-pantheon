@@ -42,6 +42,25 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
+
+// Files directories - uncomment to override
+//$settings['file_public_path'] = 'sites/default/files';
+//$settings['file_private_path'] = 'sites/default/files/private';
+//$config['system.file']['path']['temporary'] = '/tmp';
+
+// Stage File Proxy
+/*
+$config['stage_file_proxy.settings']['origin'] = 'http://example.com'; // no trailing slash
+$config['stage_file_proxy.settings']['origin_dir'] = 'sites/default/files';
+*/
+
+// Environment Indicator
+/*
+$config['environment_indicator.indicator']['bg_color'] = 'green';  // green for local, yellow for Dev, red for Live.
+$config['environment_indicator.indicator']['fg_color'] = 'white';
+$config['environment_indicator.indicator']['name'] = 'Local';
+*/
 ```
 
 Navigate to your local site and install Drupal.
