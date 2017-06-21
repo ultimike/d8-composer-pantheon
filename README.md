@@ -55,7 +55,7 @@ Optionally, remove the entire "workflows" section of pantheon.yml
  
 `terminus backup:create my_awesome_site.dev --element=database`
  
-`terminus backup:get my_awesome_site.dev --element=database | xargs curl -o db.sql.gz`
+`terminus backup:get my_awesome_site.dev --element=database | xargs curl -o database_dumps/db.sql.gz`
  
 Copy `/web/sites/example.settings.local.php` to `/web/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
