@@ -28,6 +28,8 @@ Remove "excludes" items from drupal-scaffold section of composer.json
 Optionally, remove the entire "workflows" section of pantheon.yml
  
 `composer drupal-scaffold`
+
+`mkdir database_dumps`
  
 `git init`
  
