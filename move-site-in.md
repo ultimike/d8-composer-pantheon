@@ -115,13 +115,13 @@ Connect to the remote Pantheon Git repository:
 *  If the site doesn't have an existing remote repository, the use:  
    *  `git remote add origin ssh://…`  
 
-Push to the Pantheon repository: 
+Push to the Pantheon repository:  
 
 *  If the site's repository is already hosted on Pantheon use:  
-  *  `git push origin master`  
+   *  `git push origin master`  
 *  If you are pushing to Pantheon for the first time use:  
-  *  `git push --force origin master`  
-  *  `git branch --set-upstream-to origin/master`  
+   *  `git push --force origin master`  
+   *  `git branch --set-upstream-to origin/master`  
 
 Export the new local database. 
 
