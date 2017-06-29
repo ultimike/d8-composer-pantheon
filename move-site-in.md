@@ -106,7 +106,7 @@ Use the results of the previous command in the next command.
 
 Connect to the remote Pantheon Git repository:
 
-*  If the site's repository is already hosted on Pantheon, then skip this step.  
+*  If the site's repository is already hosted on Pantheon, then skip this step (but strongly consider doing all of this on a Pantheon Multidev environment).  
 *  If the site's repository is hosted somewhere else, and you want to keep the ability to be able to push to both the original site repository and Pantheon, then use:
    *  `git remote add pantheon ssh://…` - you'll need to remember to substitute "pantheon" for "origin" in the remainder of Git commands below.  
 *  If you want to only push this new repository to Pantheon then first remove the reference to the old repository:
@@ -114,6 +114,12 @@ Connect to the remote Pantheon Git repository:
    *  `git remote add origin ssh://…`
 *  If the site doesn't have an existing remote repository, the use:  
    *  `git remote add origin ssh://…`
+
+*  If the site's repository is already hosted on Pantheon use:
+
+`git push origin master`
+
+*  If you are pushing to Pantheon for the first time use: 
 
 `git push --force origin master`
 
