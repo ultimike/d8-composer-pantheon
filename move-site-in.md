@@ -43,7 +43,11 @@ Optionally, remove the entire "workflows" section of pantheon.yml
  
 `composer drupal-scaffold`
 
-Copy the `.git` directory from the original project to `/my-awesome-project/.git`. Be sure the local repository is up-to-date with any remote repositories prior to copying.
+If the site is currently hosted on Pantheon, then it is recommended to create a new Multidev environment for this migration at this point.
+
+Be sure the local repository is up-to-date with any remote repositories prior to copying. 
+
+Copy the `.git` directory from the original project to `/my-awesome-project/.git`. 
 
 Copy any custom modules, themes, or profiles from the original project to the appropriate directory in `/my-awesome-project/web/`.
 
@@ -96,6 +100,8 @@ Clear all caches
 
 Load site locally, confirm all is well. 
 
+If the site is already hosted on Pantheon, and a new Multidev environment exists for this migration, then create and switch to a new Git branch using `git checkout --track -b <multidev-branch-name> origin/<multidev-branch-name>`
+
 `git add .`
 
 `git commit -m 'Moved site to a Composer-based workflow.'`
@@ -106,7 +112,7 @@ Use the results of the previous command in the next command.
 
 Connect to the remote Pantheon Git repository:
 
-*  If the site's repository is already hosted on Pantheon, then skip this step (but strongly consider doing all of this on a Pantheon Multidev environment).  
+*  If the site's repository is already hosted on Pantheon, then skip this step.  
 *  If the site's repository is hosted somewhere else, and you want to keep the ability to be able to push to both the original site repository and Pantheon, then use:
    *  `git remote add pantheon ssh://…` - you'll need to remember to substitute "pantheon" for "origin" in the remainder of Git commands below.  
 *  If you want to only push this new repository to Pantheon then first remove the reference to the old repository:
@@ -117,8 +123,8 @@ Connect to the remote Pantheon Git repository:
 
 Push to the Pantheon repository:  
 
-*  If the site's repository is already hosted on Pantheon use:  
-   *  `git push origin master`  
+*  If the site's repository is already hosted on Pantheon use (both "origin" and "master" might be different depending on your situation):  
+   *  `git push origin master
 *  If you are pushing to Pantheon for the first time use:  
    *  `git push --force origin master`  
    *  `git branch --set-upstream-to origin/master`  
