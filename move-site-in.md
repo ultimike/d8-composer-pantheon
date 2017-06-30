@@ -43,7 +43,7 @@ Optionally, remove the entire "workflows" section of pantheon.yml
  
 `composer drupal-scaffold`
 
-Copy the `.git` directory from the original project to `/my-awesome-project/.git`.
+Copy the `.git` directory from the original project to `/my-awesome-project/.git`. Be sure the local repository is up-to-date with any remote repositories prior to copying.
 
 Copy any custom modules, themes, or profiles from the original project to the appropriate directory in `/my-awesome-project/web/`.
 
