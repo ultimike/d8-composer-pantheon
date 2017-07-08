@@ -52,6 +52,10 @@ Optionally, remove the entire "workflows" section of pantheon.yml
 `terminus remote:drush my_awesome_site.dev -- site-install --account-name=admin --account-pass=some-difficult-password --account-mail=you@domain.com`
  
 `terminus connection:set my_awesome_site.dev git`
+
+If using Kalabox for your local development stack, stop here and pull the site down using the Kalabox UI and follow the instructions at https://www.thinktandem.io/blog/2017/05/20/using-pantheon-s-nested-docroot-with-kalabox/ for using Kalabox with a nested docroot.
+
+Else, if you're using another local development stack...
  
 `terminus backup:create my_awesome_site.dev --element=database`
  
