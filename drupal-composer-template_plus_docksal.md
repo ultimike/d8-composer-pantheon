@@ -23,7 +23,8 @@ Start up the Docksal containers for this project with: `fin start`
 
 Copy `/projectname/web/sites/example.settings.local.php` to `/projectname/web/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
-```$config_directories['sync'] = '../config';
+```
+$config_directories['sync'] = '../config';
 $settings['hash_salt'] = 'any_random_str';
 $settings['file_chmod_directory'] = 0777;
 $settings['file_chmod_file'] = 0666;
@@ -43,7 +44,8 @@ Consider modifying the `hash_salt` variable to your own random string. Note that
 
 Next, modify `/projectname/web/sites/default/settings.php` and uncomment the 3 lines near the bottom of the file related to the settings.local.php:
 
-```if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+```
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 ```
@@ -52,7 +54,8 @@ At this point, you should be able to go to http://projectname.docsal in your bro
 
 If you want to add/modify services (containers) to your project, create a `/projectname/.docksal/docksal-local.yml` to define the services you would like to run. Here's an example file:
 
-```version: "2.1"
+```
+version: "2.1"
 
 services:
   # Adds a Solr container with version 3.x of Solr - see
