@@ -36,7 +36,7 @@ $databases['default']['default'] = array (
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-);```
+);`
 
 Consider modifying the `hash_salt` variable to your own random string. Note that these database credentials are the default credentials for a standard Docksal configuration.
 
@@ -44,7 +44,7 @@ Next, modify `/projectname/web/sites/default/settings.php` and uncomment the 3 l
 
 ```if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
-}```
+}`
 
 At this point, you should be able to go to http://projectname.docsal in your brower and be redirected to the Drupal install page. Do the installation (you should *not* be prompted for database credentials). 
 
@@ -74,4 +74,4 @@ services:
     #image: docksal/cli:1.3-php7
     # Uncomment to add support for xdebug - see http://docksal.readthedocs.io/en/master/tools/xdebug/.  
 #    environment:
-#      - XDEBUG_ENABLED=1```
+#      - XDEBUG_ENABLED=1`
