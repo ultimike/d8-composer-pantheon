@@ -19,6 +19,8 @@ Create a new file inside the new `.docksal` directory named `docksal-local.env` 
 
 `DOCROOT=web`
 
+Start up the Docksal containers for this project with: `fin start`
+
 Copy `/projectname/web/sites/example.settings.local.php` to `/projectname/web/sites/default/settings.local.php` and append (with the proper database credentials for your local) the following:
  
 ```$config_directories['sync'] = '../config';
