@@ -1,4 +1,4 @@
-# Quick Reference: Creating a new Pantheon-focused, Drupal 8 site with Composer and Terminus
+# Quick Reference: Creating a new Pantheon-focused, Drupal 8 site with Composer and Terminus (Pantheon's Composer template)
 
 ## Prerequisites: 
   *  Composer  
